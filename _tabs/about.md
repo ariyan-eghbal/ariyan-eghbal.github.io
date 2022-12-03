@@ -4,5 +4,12 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> Computer Science Geek, Network Engineer, Software developer.  
+> Interested in 
+> * Math 
+> * Computer Networking 
+> * Wireless Communication 
+> * Electronic Hardwares.
+> * Machine Learning
+> * Quantum Computation
 {: .prompt-tip }

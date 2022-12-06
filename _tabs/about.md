@@ -9,7 +9,7 @@ order: 4
 > * Math 
 > * Computer Networking 
 > * Wireless Communication 
-> * Electronic Hardwares.
+> * Electronic Hardwares
 > * Machine Learning
 > * Quantum Computation
 {: .prompt-tip }

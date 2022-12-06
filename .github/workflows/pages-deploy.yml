@@ -2,8 +2,8 @@ name: "Build and Deploy"
 on:
   push:
     branches:
-      - main
       - master
+      - main
     paths-ignore:
       - .gitignore
       - README.md
@@ -69,3 +69,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+

@@ -7,6 +7,14 @@
   type: twitter
   icon: 'fab fa-twitter'
 -
+  type: mastodon
+  icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
+  url:  'https://noc.social/@ariyan_eghbal'                  # Fill with your mastodon account page
+- 
+  type: youtube
+  icon: 'fab fa-youtube'
+  url: 'https://www.youtube.com/channel/UCIVwY784A-_8yO4z89WuGQA'
+-
   type: email
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab
@@ -16,10 +24,6 @@
   noblank: true
 
 # Uncomment and complete the url below to enable more contact options
-# -
-#   type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your mastodon account page
 # -
 #   type: linkedin
 #   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>

@@ -42,12 +42,16 @@ layout: page
 
 {% for post in posts %}
 
-  <div class="post-preview">
+  <div class="post-preview" >
     <h1>
+      {%- if post.lang == 'fa' -%}
+      <a href="{{ post.url | relative_url }}"><span style='text-align: right;direction: rtl;display: block;'>{{ post.title }}</span></a>
+      {%- else -%}
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {%- endif -%}
     </h1>
 
-    <div class="post-content">
+    <div class="post-content" {%- if post.lang == 'fa' -%}style='direction: rtl; text-align: right;'{%- endif -%}>
       <p>
         {% include no-linenos.html content=post.content %}
         {{ content | markdownify | strip_html | truncate: 200 | escape }}

@@ -24,7 +24,11 @@ layout: page
     <span class="date month small text-muted ml-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
       {{ post.date | date: df_strftime_m }}
     </span>
+    {%- if post.lang == 'fa' -%}
+    <a href="{{ post.url | relative_url }}"><span style='direction: rtl;display: inline-block;'>{{ post.title }}</span></a>
+    {%- else -%}
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {%- endif -%}
   </li>
 
   {% if forloop.last %}</ul>{% endif %}

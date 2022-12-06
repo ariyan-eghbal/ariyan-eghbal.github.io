@@ -28,7 +28,11 @@
           {% if page.collection == 'tabs' %}
             <span>{{ site.data.locales[site.lang].tabs[item] | default: page.title }}</span>
           {% else %}
+            {%- if page.lang == 'fa' -%}   
+            <span style='direction: rtl; display: inline-block;'>{{ page.title }}</span>
+            {%- else -%}
             <span>{{ page.title }}</span>
+            {%- endif -%}
           {% endif %}
 
         {% elsif page.layout == 'category' or page.layout == 'tag' %}

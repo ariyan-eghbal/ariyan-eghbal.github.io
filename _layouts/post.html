@@ -9,7 +9,7 @@ tail_includes:
   - comments
 ---
 
-<h1 data-toc-skip {%- if page.lang == 'fa' -%}dir='rtl' style='text-align: right; direction:rtl'{%- endif -%}>{{ page.title }}</h1>
+<h1 data-toc-skip {% if page.lang == 'fa' %}dir='rtl' style='text-align: right; direction:rtl'{% endif %}>{{ page.title }}</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -96,7 +96,7 @@ tail_includes:
 
 </div> <!-- .post-meta -->
 
-<div class="post-content" {%- if page.lang == 'fa' -%}dir='rtl' style='text-align: right; direction:rtl'{%- endif -%}>
+<div class="post-content" {% if page.lang == 'fa' %}dir='rtl' style='text-align: right; direction:rtl'{% endif %}>
   {{ content }}
 </div>
 

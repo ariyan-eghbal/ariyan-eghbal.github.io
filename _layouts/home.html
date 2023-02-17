@@ -51,7 +51,7 @@ layout: page
       {%- endif -%}
     </h1>
 
-    <div class="post-content" {%- if post.lang == 'fa' -%}style='direction: rtl; text-align: right;'{%- endif -%}>
+    <div class="post-content" {% if post.lang == 'fa' %}style='direction: rtl; text-align: right;'{% endif %}>
       <p>
         {% include no-linenos.html content=post.content %}
         {{ content | markdownify | strip_html | truncate: 200 | escape }}

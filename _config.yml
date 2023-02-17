@@ -86,7 +86,7 @@ avatar: /assets/img/avatar.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
-
+pdf2svg: /usr/bin/pdf2svg
 comments:
   active: 'giscus'
   # The active options are as follows:

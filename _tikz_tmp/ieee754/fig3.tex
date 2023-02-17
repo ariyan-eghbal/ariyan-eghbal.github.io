@@ -1,0 +1,38 @@
+
+\documentclass[tikz, border=5mm]{standalone}
+\usepackage{transparent}
+\pagecolor{white!0}
+\usepackage{tikz}
+\usepackage{xstring}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{math}
+\newcommand\MemoryLayout[1]{
+  \begin{tikzpicture}[scale=0.3]
+     \draw[thick](0,0)--++(0,3)node[above]{$0$};
+     \foreach \pt/\col/\lab/\data [remember=\pt as \tp (initially 0)] in {#1} {
+       \if\data\relax
+       \foreach[parse=true] \a in {\tp,...,\pt-1} {
+          \draw[fill=\col](\a,0) rectangle ++(1,2);
+       }
+       \else
+          \StrLen{\data}[\strlen];
+          \foreach[parse=true] \a in {\tp,...,\pt-1} {
+            \tikzmath{integer \idx; \idx=\a-\tp+1;}
+            \draw[fill=\col](\a,0) rectangle ++(1,2) node[pos=0.5]{$\StrChar{\data}{\idx}$};
+          }
+       \fi
+       \draw[thick](\pt,0)--++(0,3)node[above]{$\pt$};
+       \if\lab\relax\relax\else
+         \draw[thick,decorate, decoration={brace,amplitude=1mm}]
+            (\pt,-0.2)--node[below=1mm]{\small\lab} (\tp,-0.2);
+       \fi
+     }
+  \end{tikzpicture}
+}
+\begin{document}
+  \MemoryLayout{
+    1/red!60/Sign/\relax,
+    12/green!60/Exponent/\relax,
+    64/orange!60/Mantis/\relax
+  }
+\end{document}

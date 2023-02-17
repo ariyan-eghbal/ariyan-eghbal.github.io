@@ -298,6 +298,8 @@ img[data-src] {
 .footnotes > ol {
   padding-left: 2rem;
   margin-top: 0.5rem;
+  direction: ltr;
+  text-align: left;
 
   > li {
     &:not(:last-child) {

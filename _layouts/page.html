@@ -61,3 +61,11 @@ layout: default
   </div>
 </div>
 {% endif %}
+
+{%- if page.lang == 'fa' -%}
+<script type='text/javascript'>
+    $('p:has(img)').css({'direction': 'ltr', 'text-align': 'left'});
+    $('p:has(img) em').css({'direction': 'rtl'});
+</script>
+{%- endif -%}
+

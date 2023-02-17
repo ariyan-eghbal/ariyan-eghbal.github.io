@@ -161,11 +161,12 @@ div {
     pre.lineno {
       display: none;
     }
-
+    
     td.rouge-code {
       padding-left: 1.5rem;
     }
   }
+  direction: ltr;
 }
 
 .code-header {

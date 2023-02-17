@@ -107,4 +107,12 @@
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
   {% endunless %}
+  {%- if page.lang == 'fa' -%}
+<style>
+figcaption .mfp-title {
+    direction: rtl;
+}
+</style>
+{%- endif -%}
+
 </head>

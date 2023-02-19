@@ -55,7 +55,7 @@ google_site_verification:               # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id:                 # fill in your Google Analytics ID
+  id: G-3H4Z2ZMC18                # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -98,7 +98,7 @@ comments:
     issue_term:   # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo:              ariyan-eghbal/ariyan-eghbal.github.io 
+    repo:              ariyan-eghbal/ariyan-eghbal.github.io
     repo_id:           R_kgDOIioDnQ
     category:          General
     category_id:       DIC_kwDOIioDnc4CS6XR

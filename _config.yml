@@ -180,6 +180,9 @@ compress_html:
   ignore:
     envs: [development]
 
+include:
+  - .well-known
+
 exclude:
   - '*.gem'
   - '*.gemspec'
@@ -200,5 +203,3 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-include:
-  - .well-known

@@ -25,5 +25,8 @@
     "stylelint": "^14.14.0",
     "stylelint-config-standard-scss": "^5.0.0",
     "uglify-js": "^3.14.3"
+  },
+  "dependencies": {
+    "bluesky-comments": "^0.4.0"
   }
 }

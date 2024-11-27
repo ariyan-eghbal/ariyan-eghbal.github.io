@@ -5,6 +5,7 @@ title:  Rust lifetimes
 categories: [Programming, Rust]
 tags: [rust,lifetime]
 author: ryn
+bluesky_post_uri: "https://bsky.app/profile/ariyan.bsky.social/post/3lbvfgpiqbk2b"
 ---
 
 # Ownership, Borrowing and Lifetimes

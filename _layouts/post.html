@@ -148,3 +148,16 @@ tail_includes:
   </div><!-- .post-tail-bottom -->
 
 </div><!-- div.post-tail-wrapper -->
+
+
+<div id="bluesky-comments"></div>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/bluesky-comments@latest/dist/bluesky-comments.umd.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initBlueskyComments('bluesky-comments', { uri: '{{ page.bluesky_post_uri }}' });
+  });
+</script>
